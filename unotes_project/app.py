@@ -71,12 +71,23 @@ def register():
         email = request.form["email"]
         password = request.form["password"]
 
+        # List of admin emails
+        admin_emails = [
+            "ubalepratiksha95@gmail.com",
+            "susmitapatil457@gmail.com",
+            "divyalanghe3008@gmail.com"
+        ]
+
+        role = "admin" if email in admin_emails else "user"
+
         conn = get_db()
         cursor = conn.cursor()
+
         cursor.execute(
-            "INSERT INTO users (name, email, password) VALUES (?, ?, ?)",
-            (name, email, password)
+            "INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)",
+            (name, email, password, role)
         )
+
         conn.commit()
         conn.close()
 
@@ -271,4 +282,5 @@ def delete_note(note_id):
 
 
 if __name__ == "__main__":
+
     app.run(debug=True)
