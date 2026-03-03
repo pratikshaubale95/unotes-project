@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card shadow-lg p-4 rounded-4 bg-white">
+
+    <h3 class="text-center text-primary mb-3">
+        UniNotes Academic Resource System 📚
+    </h3>
+
+    <p class="text-center text-muted mb-4">
+        A centralized platform for managing and sharing engineering study materials.
+    </p>
+
+    <div class="table-responsive">
+        <table class="table table-bordered text-center align-middle">
+            <thead class="table-primary">
+                <tr>
+                    <th>Section</th>
+                    <th>Description</th>
+                    <th>Open</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Upload Notes</td>
+                    <td>Share study material with other students</td>
+                    <td>
+                        <a href="/upload" class="btn btn-primary btn-sm">
+                            Open
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>View Notes</td>
+                    <td>Explore available academic resources</td>
+                    <td>
+                        <a href="/notes" class="btn btn-success btn-sm">
+                            Open
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Logout</td>
+                    <td>Securely exit the system</td>
+                    <td>
+                        <a href="/logout" class="btn btn-danger btn-sm">
+                            Logout
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+{% endblock %}

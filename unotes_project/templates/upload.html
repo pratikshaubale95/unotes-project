@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card shadow-lg p-4 rounded-4 bg-white">
+
+    <h3 class="text-center text-primary mb-4">Upload New Notes 📤</h3>
+
+    <form method="POST" enctype="multipart/form-data">
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Title</label>
+                <input type="text" name="title" class="form-control" required>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Subject</label>
+                <input type="text" name="subject" class="form-control" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Branch</label>
+                <input type="text" name="branch" class="form-control" required>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Year</label>
+                <input type="text" name="year" class="form-control" required>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Description</label>
+            <textarea name="description" class="form-control"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Upload File</label>
+            <input type="file" name="file" class="form-control" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">
+            Upload Notes
+        </button>
+
+    </form>
+
+</div>
+
+{% endblock %}

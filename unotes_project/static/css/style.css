@@ -1,0 +1,47 @@
+/* Gradient Background */
+body {
+    background: linear-gradient(to right, #4e73df, #1cc88a);
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar Styling */
+.navbar-custom {
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Card Styling */
+.card {
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Table Styling */
+.table th {
+    background-color: #343a40;
+    color: white;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #4e73df;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2e59d9;
+}
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}

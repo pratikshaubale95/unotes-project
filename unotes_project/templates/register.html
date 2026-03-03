@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card p-5 bg-white">
+
+            <h3 class="text-center text-primary mb-3">
+                Create Your Account 🚀
+            </h3>
+
+            <p class="text-center text-muted mb-4">
+                Join UniNotes and start sharing knowledge.
+            </p>
+
+            <form method="POST">
+
+                <div class="mb-3">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control" placeholder="Create a password" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">
+                    Register Now
+                </button>
+
+            </form>
+
+            <div class="text-center mt-4">
+                <span class="text-muted">Already have an account?</span>
+                <a href="/login" class="text-decoration-none fw-bold"> Login</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
